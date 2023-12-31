@@ -2,7 +2,6 @@ import tkinter as tk
 import tkinter.messagebox
 import time
 
-
 class Application(tk.Frame): 
     def __init__(self, master, *args, **kwargs):
         tk.Frame.__init__(self, master, *args, **kwargs)
@@ -113,14 +112,9 @@ class Application(tk.Frame):
         self.timer()
        
 
-            
-
-
 if __name__ == "__main__":
     """Main loop of timer"""
     root = tk.Tk()
     root.title("TIMER")
     Application(root).pack(side="top", fill="both", expand=True)
     root.mainloop()
-
-
